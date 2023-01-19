@@ -52,7 +52,7 @@ p {
 }
 
 .wrapper {
-    max-width: 25rem;
+    max-width: 26rem;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -70,7 +70,7 @@ p {
     flex-flow: column nowrap;
     align-items: center;
     gap: 1rem;
-    padding: 2.5rem 2rem;
+    padding: 2.6rem 2rem;
 }
 
 h2, .order-section h4 {
