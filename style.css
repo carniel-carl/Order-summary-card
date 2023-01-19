@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+     /* PRIMARY COLOUR */
+
+    --PALE-BLUE: hsl(225, 100%, 94%);
+    --BRIGHT-BLUE: hsl(245, 75%, 52%);
+
+     /* NEUTRAL COLOUR */
+
+    --VERY-PALE-BLUE: hsl(225, 100%, 98%);
+    --DESATURATED-BLUE: hsl(224, 23%, 55%);
+    --DARK-BLUE: hsl(223, 47%, 23%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url("images/pattern-background-desktop.svg") var(--PALE-BLUE) no-repeat; 
+    text-align: center;
+    color: var(--DESATURATED-BLUE);
+    font-size: 1rem;   
+}
+
+img {
+    display: block;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 2rem 1.8rem;
+}
+
+.wrapper {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero-logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.text-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 2rem;
+}
+
+h2, .order-section h4 {
+    color: var(--DARK-BLUE);
+}
+
+a {
+    color: var(--BRIGHT-BLUE);
+    font-weight: 500;
+}
+
+a:hover {
+    opacity: 80%;
+    text-decoration: none;
+}
+
+.order-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--VERY-PALE-BLUE);
+    border-radius: 0.6rem;
+    margin: .5rem 0;
+}
+
+
+.price-section {
+    display: flex;
+    gap: 15px;
+}
+
+.price {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.payment-btn {
+    text-decoration: none;
+    width: 100%;
+    background-color: var(--BRIGHT-BLUE);
+    color: white;
+    padding: .9rem 0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 16px hsla(245, 75%, 52%, 40%);
+}
+
+.payment-btn:hover {
+    background-color: hsla(245, 75%, 52%, 80%);
+}
+
+.cancel-btn {
+    text-decoration: none;
+    color: var(--DESATURATED-BLUE);
+}
+
+.cancel-btn:hover {
+    color: var(--DARK-BLUE);
+}
+
+
+@media screen and (max-width:600px) {
+    /* body {
+        background: url("images/pattern-background-mobile.svg") var(--PALE-BLUE) no-repeat; 
+
+    } */
+
+    .order-section {
+        padding: .4rem;
+    }
+
+}
